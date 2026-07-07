@@ -1,0 +1,44 @@
+from portfolio import optimize_portfolio, efficient_frontier_data, portfolio_correlation
+
+tickers = ["AAPL", "GOOGL", "TSLA", "MSFT", "AMZN"]
+
+print("=" * 55)
+print("PORTFOLIO OPTIMIZATION")
+print("=" * 55)
+
+result = optimize_portfolio(tickers, period="2y", portfolio_value=100000)
+
+print(f"Expected Annual Return:  {result['expected_annual_return']}%")
+print(f"Annual Volatility:       {result['annual_volatility']}%")
+print(f"Sharpe Ratio:            {result['sharpe_ratio']}")
+print(f"Leftover Cash:           ₹{result['leftover_cash']}")
+
+print(f"\nOptimal Weights:")
+print(f"{'Ticker':<8} {'Weight':>8} {'Amount':>12} {'Shares':>8}")
+print("-" * 40)
+for w in result["weights"]:
+    print(f"{w['ticker']:<8} {w['weight_pct']:>7}% {w['amount_invested']:>12,.0f} {w['shares_to_buy']:>8}")
+
+print("\n" + "=" * 55)
+print("EFFICIENT FRONTIER")
+print("=" * 55)
+
+frontier = efficient_frontier_data(tickers, period="2y")
+print(f"Frontier points generated: {len(frontier['frontier'])}")
+print(f"\nIndividual Stock Risk/Return:")
+print(f"{'Ticker':<8} {'Return':>8} {'Volatility':>12}")
+print("-" * 30)
+for s in frontier["individual_stocks"]:
+    print(f"{s['ticker']:<8} {s['return']:>7}% {s['volatility']:>11}%")
+
+print("\n" + "=" * 55)
+print("CORRELATION MATRIX")
+print("=" * 55)
+corr = portfolio_correlation(tickers, period="2y")
+print(f"(1.0 = move together, 0.0 = independent, -1.0 = opposite)")
+for row in corr:
+    ticker = row["ticker"]
+    vals = {k: v for k, v in row.items() if k != "ticker"}
+    print(f"\n{ticker}:")
+    for k, v in vals.items():
+        print(f"  vs {k}: {v}")  
