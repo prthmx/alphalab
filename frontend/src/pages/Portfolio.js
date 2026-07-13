@@ -6,7 +6,6 @@ import {
 } from 'recharts';
 
 const API = 'https://alphalab-3dvd.onrender.com';
-
 function PortfolioHero() {
   return (
     <div style={{

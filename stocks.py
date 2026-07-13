@@ -3,7 +3,7 @@
 
 STOCKS = {
 
-    "🇮🇳 Nifty 50 — Top Indian": {
+    " Nifty 50 — Top Indian": {
         "RELIANCE.NS":  "Reliance Industries",
         "TCS.NS":       "Tata Consultancy Services",
         "HDFCBANK.NS":  "HDFC Bank",
@@ -26,7 +26,7 @@ STOCKS = {
         "POWERGRID.NS": "Power Grid Corp",
     },
 
-    "🇮🇳 Indian Banks": {
+    " Indian Banks": {
         "HDFCBANK.NS":  "HDFC Bank",
         "ICICIBANK.NS": "ICICI Bank",
         "SBIN.NS":      "State Bank of India",
@@ -39,7 +39,7 @@ STOCKS = {
         "PNB.NS":       "Punjab National Bank",
     },
 
-    "🇮🇳 Indian IT": {
+    " Indian IT": {
         "TCS.NS":       "Tata Consultancy Services",
         "INFY.NS":      "Infosys",
         "WIPRO.NS":     "Wipro",
@@ -52,7 +52,7 @@ STOCKS = {
         "OFSS.NS":      "Oracle Financial Services",
     },
 
-    "🇮🇳 Indian Auto": {
+    " Indian Auto": {
         "MARUTI.NS":    "Maruti Suzuki",
         "TATAMOTORS.NS":"Tata Motors",
         "M&M.NS":       "Mahindra & Mahindra",
@@ -63,7 +63,7 @@ STOCKS = {
         "ASHOKLEY.NS":  "Ashok Leyland",
     },
 
-    "🇮🇳 Indian Pharma": {
+    " Indian Pharma": {
         "SUNPHARMA.NS": "Sun Pharmaceutical",
         "DRREDDY.NS":   "Dr. Reddy's Laboratories",
         "CIPLA.NS":     "Cipla",
@@ -74,7 +74,7 @@ STOCKS = {
         "LUPIN.NS":     "Lupin",
     },
 
-    "🇺🇸 US Big Tech": {
+    " US Big Tech": {
         "AAPL":  "Apple",
         "MSFT":  "Microsoft",
         "GOOGL": "Alphabet (Google)",
@@ -87,7 +87,7 @@ STOCKS = {
         "INTC":  "Intel",
     },
 
-    "🇺🇸 US Finance": {
+    " US Finance": {
         "JPM":  "JPMorgan Chase",
         "BAC":  "Bank of America",
         "GS":   "Goldman Sachs",
@@ -100,7 +100,7 @@ STOCKS = {
         "SCHW": "Charles Schwab",
     },
 
-    "🇺🇸 US Healthcare": {
+    " US Healthcare": {
         "JNJ":  "Johnson & Johnson",
         "PFE":  "Pfizer",
         "UNH":  "UnitedHealth Group",
@@ -111,7 +111,7 @@ STOCKS = {
         "AMGN": "Amgen",
     },
 
-    "🌍 Global Giants": {
+    " Global Giants": {
         "TSM":   "Taiwan Semiconductor",
         "ASML":  "ASML Holding",
         "NVO":   "Novo Nordisk",
@@ -124,7 +124,7 @@ STOCKS = {
         "SE":    "Sea Limited",
     },
 
-    "⚡ EV & Clean Energy": {
+    " EV & Clean Energy": {
         "TSLA":  "Tesla",
         "RIVN":  "Rivian",
         "LCID":  "Lucid Motors",
@@ -137,7 +137,7 @@ STOCKS = {
         "BLNK":  "Blink Charging",
     },
 
-    "🤖 AI & Semiconductors": {
+    " AI & Semiconductors": {
         "NVDA":  "NVIDIA",
         "AMD":   "AMD",
         "INTC":  "Intel",
@@ -150,7 +150,7 @@ STOCKS = {
         "AMAT":  "Applied Materials",
     },
 
-    "💱 Forex Major Pairs": {
+    " Forex Major Pairs": {
         "EURUSD=X":  "Euro / US Dollar",
         "GBPUSD=X":  "British Pound / US Dollar",
         "USDJPY=X":  "US Dollar / Japanese Yen",
@@ -163,7 +163,7 @@ STOCKS = {
         "EURJPY=X":  "Euro / Japanese Yen",
     },
 
-     "🥇 Commodities & Metals": {
+     " Commodities & Metals": {
         "GLD":   "Gold (XAU/USD)",
         "SLV":   "Silver (XAG/USD)",
         "USO":   "Crude Oil WTI",
@@ -176,7 +176,7 @@ STOCKS = {
         "DJP":   "Bloomberg Commodity Index",
     },
 
-    "🪙 Crypto": {
+    " Crypto": {
         "BTC-USD":  "Bitcoin",
         "ETH-USD":  "Ethereum",
         "BNB-USD":  "Binance Coin",
@@ -189,7 +189,7 @@ STOCKS = {
         "AVAX-USD": "Avalanche",
     },
 
-    "📊 Market Indices": {
+    " Market Indices": {
         "^NSEI":   "Nifty 50 (India)",
         "^BSESN":  "BSE Sensex (India)",
         "^GSPC":   "S&P 500 (US)",

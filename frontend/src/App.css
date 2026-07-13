@@ -3,15 +3,14 @@
   min-height: 100vh;
 }
 
-/* ── Sidebar ───────────────────────────────────────── */
 .sidebar {
-  width: 220px;
-  min-width: 220px;
-  background: #0d0d1a;
-  border-right: 1px solid #2a2a3e;
+  width: 200px;
+  min-width: 200px;
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 0.875rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,46 +22,46 @@
 .sidebar-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 0.5rem 0.5rem 1rem;
+  gap: 10px;
+  padding: 0.25rem 0.5rem 1rem;
 }
 
 .sidebar-brand {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .brand-alpha {
-  font-size: 20px;
-  font-weight: 800;
-  color: #4f46e5;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
   letter-spacing: -0.5px;
 }
 
 .brand-lab {
-  font-size: 20px;
-  font-weight: 800;
-  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #757575;
   letter-spacing: -0.5px;
 }
 
 .sidebar-divider {
   height: 1px;
-  background: #2a2a3e;
-  margin: 0.75rem 0;
+  background: #f0f0f0;
+  margin: 0.5rem 0;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
 .sidebar-section-label {
   font-size: 10px;
   font-weight: 600;
-  color: #4b5563;
+  color: #b0b0b0;
   letter-spacing: 0.08em;
   padding: 0.5rem 0.5rem 0.25rem;
 }
@@ -72,31 +71,32 @@
   align-items: center;
   gap: 10px;
   background: transparent;
-  color: #9ca3af;
+  color: #757575;
   border: none;
-  padding: 0.6rem 0.75rem;
+  padding: 0.55rem 0.75rem;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.2s;
+  transition: all 0.15s;
   text-align: left;
   width: 100%;
 }
 
 .sidebar-btn:hover {
-  background: #1a1a2e;
-  color: white;
+  background: #f5f5f5;
+  color: #1a1a1a;
 }
 
 .sidebar-btn.active {
-  background: #4f46e5;
-  color: white;
+  background: #e8f8f4;
+  color: #00b386;
+  font-weight: 600;
 }
 
 .sidebar-icon {
-  font-size: 16px;
-  width: 20px;
+  font-size: 15px;
+  width: 18px;
   text-align: center;
 }
 
@@ -107,19 +107,15 @@
 
 .sidebar-info {
   font-size: 12px;
-  color: #4b5563;
+  color: #b0b0b0;
   padding: 3px 0.5rem;
 }
 
-/* ── Main Content ──────────────────────────────────── */
 .main-content {
-  margin-left: 220px;
+  margin-left: 200px;
   flex: 1;
-  padding: 2rem;
-  max-width: calc(100vw - 220px);
+  padding: 1.5rem 2rem;
+  max-width: calc(100vw - 200px);
   min-height: 100vh;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+  background: #f5f5f5;
 }
